@@ -240,6 +240,7 @@ li{
 	text-align: center;
 	color: #f7f6fa ;
 }
+
 #about, #reservation, #menu{
 	font-size: xx-large !important;
 	color: #E7E7E7 !important;
@@ -373,10 +374,7 @@ input[type=text], input[type=tel]{
 .btn:focus {
     outline: none;
 }
-section{
-	
-	scroll-behavior: smooth !important;
-}
+
 .container{
 	margin-left: 33% !important;
 	margin-top: 100px;
