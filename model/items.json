@@ -1,0 +1,49 @@
+[
+    {
+        "i_id": "1", 
+        "i_name": "Special Chicken",
+         "i_image": "../images/chicken.jpg",
+         "i_price": 220
+        },
+    {
+        "i_id": "2", "i_name": "Drumsticks", 
+        "i_image": "../images/drumsticks.jpg",
+         "i_price": 330
+        },
+    {
+        "i_id": "3", 
+        "i_name": "Chicken",
+         "i_image": "../images/fry.jpg", 
+         "i_price": 110
+        },
+    {
+        "i_id": "4", 
+        "i_name": "Steak", 
+        "i_image": "../images/steak.jpg", 
+        "i_price": 350
+    },
+    {
+        "i_id": "5",
+         "i_name": "Chicken Biriyani", 
+         "i_image": "../images/chicken-biryani.jpg",
+          "i_price":170
+         },
+    {
+        "i_id": "6", 
+        "i_name": "Gopi Manchurian",
+         "i_image": "../images/Gobimanchurian.jpg", 
+         "i_price": 150
+        },
+    {
+        "i_id": "7",
+         "i_name": "Veg Biriyani", 
+         "i_image": "../images/vegbiriyani.jpg",
+          "i_price":160
+         },
+         {
+            "i_id": "8",
+             "i_name": "Veg Fried Rice", 
+             "i_image": "../images/vegrice.jpg",
+              "i_price":150
+             }
+]

@@ -1,0 +1,58 @@
+body{
+  background-color: rgb(224, 238, 233) !important;
+  
+}
+
+  #nav{
+   
+    position: sticky !important;
+    top: 0 !important;
+    
+  }
+  @media (min-width:577px) and (max-width: 800px) {
+    #inner, nav{
+      text-align: center;
+    }
+    table{
+      align-self: center;
+    }
+  }
+
+  p{
+    font-size: medium;
+  }
+  
+  #add{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: small !important;
+    background-color: rgb(181, 247, 181);
+  }
+  #imp{
+    width: 400px;
+    height: 150px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+   padding-left: 120px;
+    
+  }
+  .image{
+    width: 350px !important;
+    height: 300px !important;
+    padding: 45px 5px 5px 35px;
+  }
+  .rmv{
+    height: 30px !important;
+    width: 100px !important;
+    background-color: rgb(233, 113, 43);
+    border-radius: 50%;
+    margin-bottom: 70px;
+    
+  } 
+  #order{
+    width: 100px;
+    height: 40px;
+    background-color: aqua;
+    border-radius: 25px;
+  }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+		<script src = "./shopcontrol.js"></script>
+		<link rel="stylesheet" href="./shopstyle.css">
+		<meta charset = "UTF-8" name = "viewport" content = "width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+<body ng-app = "online" ng-controller = "onlineController" >
+    <div class="bg">
+	<nav class = "navbar navbar-default" id="nav" style="background-color: rgb(18, 18, 92);">
+		<div >
+			<a class = "navbar-brand" href = "/index.html" style="font-size: 30px; width: 100%; height: 60px; padding-left:50px ; color: azure;">Home</a>
+		</div>
+		
+		
+	</nav>
+	
+	<div  id="inner">
+		<h3 class = "text-primary" style="padding: 50px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 70px; padding-top: 70px;">Online Order Portal</h3>
+        <hr style = "border-top:1px dotted #ccc;"/>
+		<div id = "bg-background" class = "col-md-7">
+			<h2 style="font-family: 'Times New Roman', Times, serif; font-size: 40px; text-align: center; color: rgb(224, 20, 207);" >ITEMS<h2>
+				
+			<hr style = "border-top:1px groovy #ccc;">
+			
+			<div class="i_list" ng-repeat = "item in items " style="padding-left: 150px;" >
+				<img ng-src = "{{item.i_image}}" class="image" >
+				<div class="card-body"id="imp">
+				  <h4 class="card-title">{{item.i_name}}</h4>
+				  <p class="card-text">Price: {{item.i_price|currency: "Rs"}}</p>
+				  <button type = "button" ng-click = "add_cart(item)" id="add"> ADD</button>
+				</div>
+			  </div>
+			
+		</div>
+	
+		<div class = "pull-right col-md-5" >
+			<div class = "panel panel-primary" style="background-color: rgb(206, 209, 197);">
+				<div class = "panel-heading" style="background-color: rgb(206, 24, 94);">
+					<h5 style="text-align: center; font-size: 30px; ">MY ORDER</h5>
+				</div>
+				<div class = "panel-body table-responsive">
+                    <table class = "table">
+						<thead>
+							<tr style="font-size: 20px;">
+								<th>Item</th>
+								<th>Price</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat = "cart in carts" ng-init = "setTotals(cart)">
+								<td>{{cart.i_name}}</td>
+								<td>{{cart.i_price|currency: "Rs"}}</td>
+								<td><button type = "button" ng-click = "remove_cart(cart)" class = "rmv"> Remove</button></td>
+							</tr>
+							<tr>
+								<td align = "right">Total</td>
+								<td>{{total|currency: "Rs"}} <button id="order"> <span>Place Order</span> </button></td>
+							</tr>
+						</tbody>
+					</table>
+                </div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>	
+</html>
+
+
