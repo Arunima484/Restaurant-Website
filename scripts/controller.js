@@ -1,4 +1,4 @@
-var app = angular.module('MyCollagesite', ['ngRoute']);
+var app = angular.module('MyWork', ['ngRoute']);
 app.config(function($routeProvider){
     $routeProvider
     .when('/home',{
