@@ -240,7 +240,7 @@
 			  <p ng-repeat ="item in items">
 				   Name: {{ item.name }}
 								  <br>
-				   Price:{{ item.price}} 
+				   Price:{{ item.price|currency: "Rs"}} 
 			  </p>
 			  </div>
 			  </div>
